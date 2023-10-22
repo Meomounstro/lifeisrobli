@@ -45,6 +45,6 @@ threads = int(input("[-] How many threads: "))
 hook.send("'```[+] Starting Group Finder'```")
 
 while True:
-	time.sleep(1)
+	time.sleep(0.5)
 	if threading.active_count() <= threads:
 		threading.Thread(target=groupfinder).start()
